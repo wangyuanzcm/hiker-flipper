@@ -1,3 +1,11 @@
+# hiker-flipper
+
+基于 Flipper 的 0.176 版本进行二次开发，用于支持小程序/PC/H5 等开发调试，目标覆盖集成/单元测试，性能调优，埋点添加/测试、开发调试、视觉回归等场景
+
+【TODO】：
+
+1. 完成 JS APP 与 Flipper 的基本通信
+
 <p align="center">
   <img src="https://fbflipper.com/img/icon.png" alt="logo" width="20%"/>
 </p>
