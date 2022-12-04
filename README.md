@@ -6,6 +6,20 @@
 
 1. 完成 JS APP 与 Flipper 的基本通信
 
+问题：
+
+1. 手机投屏/录屏/截屏
+   安卓端投屏有第三方软件 scrcpy 但是 ios 端并没有，所以使用这种方式不可取。
+   webRTC 可以用于直播，这里可以用于屏幕同步。https://blog.csdn.net/shineych/article/details/105101557
+   对于前端来说，投屏主要用于调试，获取用户操作步骤，所以 rrweb 也是一种方法，https://www.rrweb.io/
+2. https://gitee.com/vegetable_gua/chrome-dev-tool
+
+基于 chrome 远程调试协议的调试工具
+https://www.anquanke.com/post/id/160160
+vconsole
+https://github.com/Tencent/vConsole/blob/dev/README_CN.md
+考虑到在多个场景中使用，vconsole 更通用一点
+
 <p align="center">
   <img src="https://fbflipper.com/img/icon.png" alt="logo" width="20%"/>
 </p>

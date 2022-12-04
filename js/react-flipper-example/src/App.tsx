@@ -9,6 +9,9 @@
 
 import {FC} from 'react';
 import FlipperTicTacToe from './FlipperTicTacToe';
+import VConsole from 'vconsole';
+
+const vConsole = new VConsole();
 
 
 const App: FC = () => {

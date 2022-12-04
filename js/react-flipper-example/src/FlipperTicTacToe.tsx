@@ -43,12 +43,14 @@ const FlipperTicTacToe: FC = () => {
 
   useEffect(() => {
     flipperClientPromise?.then(flipperClient => {
+      console.log('flipperClient',flipperClient)
       flipperClient.addPlugin({
         getId() {
           // Name of the plugin
           return 'ReactNativeTicTacToe';
         },
         onConnect(connection) {
+          console.log('-----ceshi')
           // Once we connected, we display it to the user
           setStatus('Desktop player present');
           // And stash the connection object

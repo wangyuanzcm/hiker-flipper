@@ -157,9 +157,12 @@ export class FlipperClient {
   private reconnectTimeout!: number;
   private appName!: string;
 
-  constructor() {}
+  constructor() {
+    console.log('-------FlipperClient--------------------')
+  }
 
   addPlugin(plugin: FlipperPlugin) {
+    console.log(plugin,'plugin--------------------')
     this.plugins.set(plugin.getId(), plugin);
 
     if (this.isConnected) {
